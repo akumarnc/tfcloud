@@ -11,11 +11,11 @@ terraform {
 
 provider "azurerm" {
     features{}
-    client_id = AZURE_CLIENT_ID
-    client_secret = AZURE_CLIENT_SECRET
+    # client_id = AZURE_CLIENT_ID
+    # client_secret = AZURE_CLIENT_SECRET
 }
 
 resource "azurerm_resource_group" "myrg" {
-  name = "testrg"
+  name = "rg-tf-cloud"
   location = "westeurope"
 }
